@@ -8,6 +8,16 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="/css/stylesheet.css">
 <link href="/favicon.ico" rel="shortcut icon" />
+<style>
+  #footer {
+            width: 400px;
+            height: 120px;
+            background-color: #00FFFF;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+</style>
 </head>
 <body>
 <script>
@@ -42,6 +52,19 @@ var _hmt = _hmt || [];
 <br>
 <h2><b>China 2B2T服务器状态</b></h2>
 <iframe style="width:728px;height:90px;max-width:100%;border:none;display:block;margin:auto" src="https://zh-cn.namemc.com/server/china2b2t.org/embed" width="728" height="90"></iframe>
-</body>
+<footer id="footer">
+        <br />
+        <p style="text-align: center;">
+        本站已不稳定运行:<strong><SPAN id=span_dt_dt style="color: #EE9CB3;"><a id="days">0</a>天</strong></SPAN>
+
+    <script>
+        var s1 = '2020-06-08';
+        s1 = new Date(s1.replace(/-/g, "/"));
+        s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+    </script>
+  </body>
 </head>
 </html>
